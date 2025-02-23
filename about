@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About sjtracey</title>
+</head>
+<body>
+  <h1>A creative home for showing and sharing my work</h1>
+  <p>
+    Welcome to my personal space online! I’m exploring web development from the ground up—starting with HTML, CSS, and JavaScript—and documenting every step of the journey here. I use <strong>Obsidian</strong> as my personal knowledge management system (my “exo-cortex”), so you’ll also see some published notes and reflections as I learn.
+  </p>
+  <p>
+    Beyond coding, this site is a canvas for my creative pursuits, from writing and drawing to more esoteric fields of interest such as the study of memory and an ambitious goal to create a Bestiary. Each section will reflect a different flavor of my curiosity, and over time, I’ll add new projects, experiments, and lessons learned.
+  </p>
+  <p>
+    Whether you’re here to follow along, gain insights, share feedback, or just explore, I hope you’ll find something that sparks your own creativity, curiosity, and love of learning!
+  </p>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> 
+    <a href="projects.html">Projects</a>
+    <!-- Add or modify links as needed -->
+  </nav>
+</body>
+</html>
