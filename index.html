@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sjtracey.com</title>
+  <style>
+    /* General reset */
+    body {
+      margin: 0;
+      padding: 0;
+      /* Removed flex centering to accommodate nav */
+      /* If you need centering for the main content, wrap that content in a container */
+      background-color: white;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    /* Navigation styles */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000; /* Ensure nav stays on top */
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    /* Horizontal line */
+    .line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px; /* Thickness of the line */
+      background-color: black;
+    }
+
+    /* Rolling circle */
+    .circle {
+      position: absolute;
+      top: calc(50% - 105px); /* Center the circle vertically on the line */
+      left: 0;
+      width: 100px; /* Diameter of the circle */
+      height: 100px; /* Diameter of the circle */
+      border: 4px solid black; /* Match line thickness */
+      border-radius: 50%;
+      background-color: transparent; /* Empty circle */
+      animation: roll 5s linear infinite;
+    }
+
+    /* Keyframes for the rolling animation */
+    @keyframes roll {
+      from {
+        left: -24px; /* Start just off the left edge */
+      }
+      to {
+        left: 100vw; /* Move off the right edge */
+      }
+    }
+
+    /* Text for website URL */
+    .url {
+      position: absolute;
+      right: 10%; /* Moves text from the right edge */
+      top: 60%; /* Centers vertically */
+      transform: translateY(-40%); /* Adjusts centering precisely */
+      text-align: right; /* Ensures text alignment remains clean */
+      font-size: 20px;
+      font-family: "Arial", sans-serif;
+      font-weight: bold;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Gen-AI-Marketing-with-Becky-Verano.html">Podcast Notes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Horizontal Line -->
+  <div class="line"></div>
+
+  <!-- Rolling Circle -->
+  <div class="circle"></div>
+
+  <!-- Website URL -->
+  <div class="url">sjtracey.com</div>
+</body>
+</html>
